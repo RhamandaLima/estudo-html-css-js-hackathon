@@ -26,6 +26,42 @@
         }
 
     </script>
+
+    <style>
+        body {
+            background-color: #cccccc;
+        }
+
+        h1 {
+            font-family: Tahoma;
+            color: grey;
+            font-size: 32px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border: solid 1px black;
+            padding: 2px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .margem-minima {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .margem-minima input,
+        .margem-minima select,
+        .margem-minima button {
+            width: 50vw;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -37,17 +73,24 @@
     </div>
 
     <img src="img.png" alt="Teste de imagem resource">
-    <a href="https://google.com.br">Link para o Google</a>
 
-    <div>
+    <div class="margem-minima">
+        <a href="https://google.com.br">Link para o Google</a>
+    </div>
+
+    <div class="margem-minima">
         <input id="meuInput" type="text" oninput="atualizacaoTexto()"/>
+    </div>
 
+    <div class="margem-minima">
         <select>
-            <option>Opção 01</option>
-            <option>Opção 02</option>
-            <option>Opção 03</option>
+                <option>Opção 01</option>
+                <option>Opção 02</option>
+                <option>Opção 03</option>
         </select>
-        
+    </div>
+
+    <div class="margem-minima">    
         <button onclick="clickNoBotao()">Texto do botão</button>
     </div>
 
