@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olá, mundo!</title>
+    
+    <script>
+        let a = "carro";
+        var b = 1; 
+        const c = "casa";
+
+        function clickNoBotao() {
+            alert("Olá mundo!");
+        }
+
+        function atualizacaoTexto() {
+            
+            let input = document.getElementById("meuInput");
+            let p = document.getElementById("para");
+
+            p.textContent = input.value;
+
+            console.log("Oi");
+        }
+
+    </script>
 </head>
+
 <body>
     <div>
         <h1>Título</h1>
         <h2>Título 02</h2>
-        <p>Qualquer texto</p>
+        <p id="para">Qualquer texto</p>
         <span>Informação</span>  
     </div>
+
     <img src="img.png" alt="Teste de imagem resource">
-    <a href="https://google.com.br">Link para Google</a>
+    <a href="https://google.com.br">Link para o Google</a>
 
     <div>
-        <input type="date">
+        <input id="meuInput" type="text" oninput="atualizacaoTexto()"/>
 
         <select>
             <option>Opção 01</option>
@@ -25,9 +48,8 @@
             <option>Opção 03</option>
         </select>
         
-        <button>Texto do botão</button>
+        <button onclick="clickNoBotao()">Texto do botão</button>
     </div>
-
 
 </body>
 
